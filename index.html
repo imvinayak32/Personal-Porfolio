@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/acbb4e4d06.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+         <div class="container">
+            <nav>
+                <img src="images/logo_my.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Vinayak Singhal</span> <br> from India</h1>
+                <p>A information technology student passionate <br>  about programming & design.</p>
+            </div>
+         </div>
+    </div>
+
+<!--About section-->
+
+    <div id="about">
+        <div class="container section2">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am Vinayak Singhal, a dedicated Information Technology student in my third year at NIT Srinagar. My passion lies in Front-end development and Machine learning, and I'm passionate about problem-solving using data structures and algorithms.  I'm driven, creative, and eager to make a tangible impact. I'm ready to dive into challenging projects and contribute effectively from day one.</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('Skills')" >Education</div>
+                        <div class="tab-links" onclick="opentab('Experience')">Skills</div>
+                        <div class="tab-links" onclick="opentab('Education')">Experience</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Under-Graduation :</span><br>B.Tech from National Institute of Technology Srinagar in Information Technology</li>
+                            <li><span>Intermediate :</span><br>Passed from Dehradun Public School with a score of 96.6% </li>
+                            <li><span>Matriculation :</span><br>Passed with a score of 96.8% from Jawahar Vedic Public School</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Data Structure and Algorithms</span><br>Arrays, Strings, Sorting Technique, Linked list, Stack etc</li>
+                            <li><span>Front-End Development</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Machine Learning</span><br>Python, and it's various libraries<br>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Bharat Intern :</span><br>Done internship at Bharat Intership under them, I have made few projects</li>
+                            <li><span>Codesoft :</span><br>First experience of Internship and learned more about CSS & JavaScript there. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!------Services----->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-End Development</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h2>Machine Learning</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>Data Struc. & Algorithms</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------Portfolio------>
+ 
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+         <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app that will going to all the students of any campus using simple and easy-use interface</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app that will going to all the students of any campus using simple and easy-use interface</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Streaming App</h3>
+                    <p>The app that will going to all the students of any campus using simple and easy-use interface</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+         </div>
+         <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+
+ <br>
+ <br>
+ <br>
+<!-------Contact------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>vinayaksrock@gmail.com</p>
+                <!-- <p><i class="fa-solid fa-phone-volume"></i>+91 9119073653</p> -->
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/imvinayak32/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/imvinayak32" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://github.com/imvinayak32" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required >
+                    <input type="email" name="Email" placeholder="Your Mail" required >
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart"></i> by Vinayak Singhal</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
